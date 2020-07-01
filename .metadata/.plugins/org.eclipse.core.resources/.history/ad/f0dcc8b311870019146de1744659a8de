@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bài tập 3</title>
+		<link href="<%=request.getContextPath() %>/Bai3/style.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h2>Hình tròn</h2>
+			<form action="<%=request.getContextPath()%>/hinh-tron" method="post">			
+			<label>Diện tích</label>
+			
+			<input type="text" value="<%if(request.getAttribute("dientich") != null){
+				out.print(request.getAttribute("dientich"));
+			} %>" name="dientich" /> <br/>
+			<label>Bán kính</label>
+			
+			<input type="text" value="<%if(request.getAttribute("bankinh") != null){
+				out.print(request.getAttribute("bankinh"));
+			} %>" name="bankinh" /> <br/>
+			
+						
+			<input type="submit" value="Submit" id="submit" /> 
+			<div class="err">
+				<%if(request.getAttribute("error") != null) {
+					%>
+					<p style="color: red"><%=request.getAttribute("error") %></p>
+				<% } %>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

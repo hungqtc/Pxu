@@ -1,0 +1,17 @@
+package com.hung.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.hung.model.Customer;
+
+public class CustomerService {
+	public static Map<Integer, Customer> customers;
+	public static int count=5;
+	
+	static {
+		customers = new HashMap<>();
+		customers.put(1, new Customer(1, "Van Phong", "123 Nguyen Tri Phuong", "phong909@gmail.com"))
+	}
+	
+}

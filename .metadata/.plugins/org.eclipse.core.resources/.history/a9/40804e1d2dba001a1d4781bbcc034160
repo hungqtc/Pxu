@@ -1,0 +1,55 @@
+package com.hung.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.hung.model.Customer;
+import com.hung.service.CustomerService;
+
+/**
+ * Servlet implementation class CustomerUpdateController
+ */
+@WebServlet("/doAdd")
+public class CustomerAddController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CustomerAddController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		String fullname = request.getParameter("fullname");
+		String address = request.getParameter("address");
+		String email = request.getParameter("email");
+		
+		//init Customer
+		Customer cus = new Customer(id, fullname, email, address);
+		
+		//update Customer
+		CustomerService customerService = new CustomerService();
+		customerService.update(cus);
+		
+		response.sendRedirect("index.jsp");
+	}
+	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

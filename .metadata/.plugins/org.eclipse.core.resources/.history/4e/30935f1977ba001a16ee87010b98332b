@@ -1,0 +1,51 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<%@page import="com.hung.model.Customer"%>
+<%@page import="java.util.List"%>
+<%@page import="com.hung.service.CustomerService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>List Customers</title>
+<style>
+table {
+	border-collapse: collapse;
+	width: 88%;
+}
+
+td, th {
+	border: 1px soild #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+	
+	<h2>Customer List</h2>
+	<a href="doAdd">Add</a>
+
+	<table style="width: 100%">
+		<tr>
+			<th>Fullname</th>
+			<th>Address</th>
+			<th>Email</th>
+			<th>Action</th>
+		</tr>
+		
+		<tr>
+			<td><%=cus.getFullname()%></td>
+			<td><%=cus.getAddress()%></td>
+			<td><%=cus.getEmail()%></td>
+			<td><a href="doUpdate?id=<%=cus.getId()%>">Edit</a>&nbsp;&nbsp;
+				<a href="doDelete?id=<%=cus.getId()%>">Delete</a></td>
+		</tr>
+	</table>
+</body>
+</html>

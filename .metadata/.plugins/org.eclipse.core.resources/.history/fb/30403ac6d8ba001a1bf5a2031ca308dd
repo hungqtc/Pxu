@@ -1,0 +1,46 @@
+package com.hung.service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hung.model.Customer;
+import com.hung.model.Grade;
+import com.hung.model.Student;
+
+public class StudentService {
+	public static Map<Integer, Student> stundents;
+	public static int count = 5;
+
+	static {
+		stundents = new HashMap<>();
+		stundents.put(1, new Student(1, "Van Phong", "123 Ho Dac Di", "vanphong@gmail.com", new Grade(1, "9")));
+		stundents.put(1, new Student(2, "Van Phong", "123 Ho Dac Di", "vanphong@gmail.com", new Grade(1, "9")));
+		stundents.put(1, new Student(3, "Van Phong", "123 Ho Dac Di", "vanphong@gmail.com", new Grade(1, "9")));
+		stundents.put(1, new Student(4, "Van Phong", "123 Ho Dac Di", "vanphong@gmail.com", new Grade(1, "9")));
+		stundents.put(1, new Student(5, "Van Phong", "123 Ho Dac Di", "vanphong@gmail.com", new Grade(1, "9")));
+	}
+
+	public List<Customer> getAllCustomer() {
+		return new ArrayList<>(customers.values());
+	}
+
+	public void save(Customer cus) {
+		++count;
+		cus.setId(count);
+		customers.put(cus.getId(), cus);
+	}
+
+	public Customer findById(int id) {
+		return customers.get(id);
+	}
+
+	public void update(Customer cus) {
+		customers.put(cus.getId(), cus);
+	}
+
+	public void delete(int id) {
+		customers.remove(id);
+	}
+}

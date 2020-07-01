@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+	<form method = "POST" action="bmi">
+		<label for="fname">Can nang: </label> <br> 
+		<input type="text" id="name" name="weight" placeholder="tinh theo Kg" ><br> 
+		<label for="lname">Height :</label> <br> 
+		<input type="text" id="password" name="height" placeholder="tinh theo m"><br>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

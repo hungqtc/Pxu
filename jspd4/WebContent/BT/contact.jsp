@@ -1,0 +1,135 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@include file="/BT/inc/header.jsp"%>
+
+<!-- contact -->
+<section class="contact py-5" id="contact">
+	<div class="container py-md-5">
+		<h3 class="tittle text-center">Contact Us</h3>
+		<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">Sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+			veniam, quis nostrud exercitation</p>
+		<div class="row mt-4">
+			<div class="col-lg-8 mb-5">
+				<form action="#" method="post">
+					<div class="row main-w3layouts-sectns">
+						<div class="col-md-6 w3-btm-spc form-text1">
+							<input type="text" name="Name" placeholder="Enter Your Name"
+								required="">
+						</div>
+						<div class="col-md-6 w3-btm-spc form-text2">
+							<input type="text" name="Phone no"
+								placeholder="Enter Phone Number" required="">
+						</div>
+					</div>
+					<div class="row main-w3layouts-sectns">
+						<div class="col-md-6 w3-btm-spc form-text1">
+							<input type="email" name="email" placeholder="Enter Your Email"
+								required="">
+						</div>
+						<div class="col-md-6 w3-btm-spc form-text2">
+							<input type="text" name="subject" placeholder="Subject"
+								required="">
+						</div>
+					</div>
+					<div class="main-w3layouts-sectns ">
+						<div class="w3-btm-spc form-text2 p-0">
+							<textarea placeholder="Enter Your Message Here" name="message"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn mt-3">Submit</button>
+				</form>
+			</div>
+			<div class="col-lg-4 mb-5">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.728106568!2d-0.24168153701090248!3d51.52877184090542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1544074523717"></iframe>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 contact-left">
+				<span>Dont Wait</span>
+				<h3 class="heading mb-lg-5 mb-4">Send Message</h3>
+			</div>
+			<div class="col-lg-9 contact-text-bot">
+				<p>If you have any queries, or want to speak to one of our
+					customer support executive, Please contact us for more details by
+					below given information.</p>
+				<div class="row mt-4">
+					<div class="contact-info col-md-6 pr-md-5">
+						<h4 class="mb-3">Address 01</h4>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Location</strong> : Customer Agency, 5th cross, 4th
+								building, New York City.
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Phone</strong> : +121 098 8907 9987
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Fax</strong> : +121 098 8907 9987
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Email</strong> : <a href="mailto:info@example.com">info@example.com</a>
+							</p>
+						</div>
+					</div>
+					<div class="contact-info col-md-6 pr-md-5 mt-md-0 mt-4">
+						<h4 class="mb-3">Address 02</h4>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Location</strong> : Customer Agency, 2nd cross, 4th
+								floor, London.
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Phone</strong> : +121 098 8907 9987
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Fax</strong> : +121 098 8907 9987
+							</p>
+						</div>
+						<div class="footer-style-w3ls">
+							<p>
+								<strong>Email</strong> : <a href="mailto:info@example.com">info@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //contact -->
+
+<!-- middle section -->
+<div class="text py-5 text-center">
+	<div class="container py-xl-5 py-lg-3">
+		<div class="row py-4">
+			<div class="col-md-12">
+				<h5 class="text-wh text-capitalize font-weight-bold let mb-4">Nature
+					always wears the colors of the spirit.</h5>
+				<p>Nulla viverra pharetra se, eget pulvinar neque pharetra ac
+					int. placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra
+					pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum
+					Vestibulum. placerat placerat dolor. Vestibulum at dui nunc. Nullam
+					eu elit neque lectus.</p>
+				<div class="text-center mt-sm-5 mt-4">
+					<a href="about.jsp" class="mr-2 work btn">Read More</a> <a
+						href="contact.jsp" class="work btn">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //middle section -->
+
+<%@include file="/BT/inc/footer.jsp"%>

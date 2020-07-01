@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+	
+	
+	<rule>
+		<from>/cat/(.*)-([0-9]*)</from>
+		<to>/cat?id=$2</to>
+	</rule>
+	<rule>
+		<from>/detail/(.*)-([0-9]*)</from>
+		<to>/detail?id=$2</to>
+	</rule>
+	<rule>
+	 	<from>/cat/(.*)-([0-9]+)/page-([0-9]+)</from>
+	 	<to>/cat?id=$2&amp;page=$3</to>
+	</rule>
+	
+</urlrewrite>
+

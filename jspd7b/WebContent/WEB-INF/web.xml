@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>jspd7b</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>IndexController</servlet-name>
+    <servlet-class>controller.IndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexController</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>IndexCatPublicController</servlet-name>
+    <servlet-class>controller.IndexCatPublicController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexCatPublicController</servlet-name>
+    <url-pattern>/danh-muc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AnewsIndexController</servlet-name>
+    <servlet-class>controller.AnewsIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnewsIndexController</servlet-name>
+    <url-pattern>/trang-chu</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>DetailPublicController</servlet-name>
+    <servlet-class>controller.DetailPublicController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailPublicController</servlet-name>
+    <url-pattern>/chi-tiet</url-pattern>
+  </servlet-mapping>
+</web-app>

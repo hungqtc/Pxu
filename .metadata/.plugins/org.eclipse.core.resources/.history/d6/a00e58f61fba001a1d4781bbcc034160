@@ -1,0 +1,17 @@
+package com.hung.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.hung.model.Customer;
+
+public class CustomerService {
+	public static Map<Integer, Customer> customers;
+	public static int count=5;
+	
+	static {
+		customers = new HashMap<>();
+		
+	}
+	
+}

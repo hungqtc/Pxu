@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;detail.jsp&apos; to &apos;public&apos;&#x0A;- Original project: &apos;bsong2&apos;&#x0A;- Destination element: &apos;public&apos;&#x0A;- Original element: &apos;detail.jsp&apos;" description="Copy file" element1="WebContent/views/public/detail.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1564217848805" target="/bsong/WebContent/views/public" units="0" version="1.0"/>
+</session>

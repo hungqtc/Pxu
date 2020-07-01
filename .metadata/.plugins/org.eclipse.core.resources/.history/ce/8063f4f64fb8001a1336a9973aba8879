@@ -1,0 +1,49 @@
+package com.hung.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/doBmi")
+public class BmiController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public BmiController() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		PrintWriter out = response.getWriter();
+		float weight = Float.parseFloat(request.getParameter("weight"));
+		float height = Float.parseFloat(request.getParameter("height"));
+
+		float bmi = doBmi(weight, height);
+		String result = "";
+
+		if (bmi < 18) {
+			result = "Duoi chuan";
+		} else if (bmi < 29) {
+			result = "Ok";
+		} else {
+			result = "Thua can";
+		}
+		out.println("<h1>Chi so BMI: </h1>" + bmi);
+		out.println("<h1>" + result + "</h1>");
+	}
+
+	public float doBmi(float weight, float height) {
+		float bmi = (weight) / (height * height);
+		return (float) (Math.ceil(bmi * 100) / 100);
+	}
+}

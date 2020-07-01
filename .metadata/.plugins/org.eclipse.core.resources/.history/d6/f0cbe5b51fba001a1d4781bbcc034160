@@ -1,0 +1,11 @@
+package com.hung.service;
+
+import java.util.Map;
+
+import com.hung.model.Customer;
+
+public class CustomerService {
+	public static Map<Integer, Customer> customers;
+	
+	
+}

@@ -1,0 +1,36 @@
+.wrapper {
+	width: 771px;
+	height: 306px;
+	background-color: #FFFDCA;
+	margin: 50px auto;
+	font-size: 24px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+h2 {
+	color: #FAFE66;
+	background-color: #326696;
+	height: 45px;
+	margin-bottom: 3px;
+	margin-left: -5px;
+	padding-left: 5px;
+	font-size: 27px;
+	text-align: center;
+}
+
+textarea {
+	height: 49px;
+	width: 760px;
+	margin-top: 15px;
+}
+
+.lb1 {
+	text-align: center;
+}
+
+.err p {
+	text-align: center;
+	color: red;
+	font-size: 25px;
+}

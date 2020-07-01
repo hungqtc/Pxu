@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=".jsp"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="package com.hung.controller;"/>
+			<item value=".html"/>
+			<item value="html"/>
+			<item value="checkout.html"/>
+			<item value="public"/>
+			<item value="multiple"/>
+			<item value="mul"/>
+			<item value="multi"/>
+			<item value="valiadate"/>
+			<item value="form"/>
+			<item value="dropdown-menu"/>
+			<item value="a"/>
+			<item value="cate"/>
+			<item value="page"/>
+			<item value="blog"/>
+		</list>
+		<list key="replacehistory">
+			<item value=".jsp"/>
+			<item value="bài hát"/>
+			<item value="Song"/>
+			<item value="User"/>
+			<item value="Friends"/>
+			<item value="Friend"/>
+			<item value="&lt;%=request.getContextPath()%&gt;/BT1/chitiet.jsp"/>
+			<item value="src=&quot;&lt;%=request.getContextPath() %&gt;/BT2/"/>
+			<item value="src=&quot;&lt;%=request.getContextPath() %&gt;/BT3/"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="793"/>
+		<item key="DIALOG_Y_ORIGIN" value="289"/>
+		<item key="DIALOG_WIDTH" value="355"/>
+		<item key="DIALOG_HEIGHT" value="415"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>
